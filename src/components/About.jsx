@@ -11,7 +11,31 @@ export default function About() {
           <div className="relative">
             <div className="absolute -inset-8 rounded-full bg-violet-500/10 blur-3xl" />
             <div className="glass-card relative overflow-hidden p-7 sm:p-9">
-              <div className="mb-8 flex items-center gap-4"><span className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-cyan-300 to-blue-600 text-xl font-black text-slate-950">RR</span><div><p className="font-bold text-white">{portfolio.identity.name}</p><p className="text-sm text-slate-400">{portfolio.identity.role}</p></div></div>
+             <div className="mb-8 flex items-center gap-4">
+  <div className="relative shrink-0">
+    <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-cyan-300/70 to-violet-500/70 blur-sm" />
+
+    <img
+      src={portfolio.identity.photo}
+      alt={`${portfolio.identity.name} — ${portfolio.identity.role}`}
+      className="relative h-16 w-16 rounded-2xl border border-white/20 object-cover object-top shadow-lg"
+    />
+  </div>
+
+  <div>
+    <p className="font-bold text-white">
+      {portfolio.identity.name}
+    </p>
+
+    <p className="text-sm text-slate-400">
+      {portfolio.identity.role}
+    </p>
+
+    <p className="mt-1 text-xs text-cyan-300">
+      Kabul, Afghanistan · Available worldwide
+    </p>
+  </div>
+</div>
               <p className="text-xl font-semibold leading-8 text-white">“Reliable software is not only about writing code. It is about understanding the workflow, protecting the data, and making the system easier to operate.”</p>
               <div className="mt-8 grid grid-cols-2 gap-3">
                 {[['Workflow thinking', Workflow], ['Data accuracy', Database], ['Controlled access', ShieldCheck], ['Stable delivery', CheckCircle2]].map(([label, Icon]) => <div key={label} className="rounded-xl border border-white/10 bg-slate-950/50 p-4"><Icon size={20} className="mb-3 text-cyan-300" /><p className="text-sm font-semibold text-slate-200">{label}</p></div>)}
