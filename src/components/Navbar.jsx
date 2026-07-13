@@ -17,7 +17,11 @@ export default function Navbar() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all ${scrolled ? 'border-b border-white/10 bg-slate-950/80 shadow-lg shadow-black/10 backdrop-blur-xl' : 'bg-transparent'}`}>
       <nav className="container-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
         <a href="#home" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-cyan-300 to-blue-600 font-black text-slate-950 shadow-lg shadow-cyan-500/20">RR</span>
+        <img
+  src="/rohullah-profile.jpg"
+  alt="Rohullah Raihan"
+  className="h-10 w-10 rounded-xl border border-white/15 object-cover object-top shadow-lg"
+/>
           <span>
             <span className="block text-sm font-bold text-white">{portfolio.identity.name}</span>
             <span className="block text-xs text-slate-400">{portfolio.identity.shortRole}</span>
