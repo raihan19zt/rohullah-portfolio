@@ -28,6 +28,7 @@ export const portfolio = {
     email: 'YOUR_EMAIL@example.com',
     phone: 'YOUR_WHATSAPP_NUMBER',
     location: 'Kabul, Afghanistan · Available worldwide',
+    photo: '/rohullah-profile.jpg',
     availability: 'Available for freelance, remote, and contract projects',
     headline: 'Building Reliable Web Systems That Solve Real Business Problems.',
     subheadline:
