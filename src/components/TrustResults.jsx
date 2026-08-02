@@ -28,7 +28,7 @@ export default function TrustResults() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-xs text-slate-600">Statistics are intentionally editable placeholders. Replace them only with accurate, verifiable numbers.</p>
+       
       </div>
     </section>
   );
