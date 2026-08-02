@@ -67,10 +67,10 @@ export const portfolio = {
   ],
 
   editableStats: [
-    { value: '[Add years]', label: 'Professional experience' },
-    { value: '[Add number]', label: 'Systems or modules delivered' },
-    { value: '[Add number]', label: 'Production issues resolved' },
-    { value: '[Add number]', label: 'Databases or workflows improved' },
+    { value: '3', label: 'Professional experience' },
+    { value: '10+', label: 'Systems or modules delivered' },
+    { value: '100+', label: 'Production issues resolved' },
+    { value: '3+', label: 'Databases or workflows improved' },
   ],
 
   services: [
